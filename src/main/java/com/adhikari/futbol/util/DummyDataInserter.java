@@ -14,6 +14,7 @@ import javax.transaction.Transactional;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.List;
+import java.util.UUID;
 
 @Component
 public class DummyDataInserter implements CommandLineRunner {
@@ -36,7 +37,7 @@ public class DummyDataInserter implements CommandLineRunner {
     public void run(String... args) throws Exception {
         // Write persistence logic here for dummy data
 
-        ClubTeam arsenal = new ClubTeam("1", "Arsenal FC", "London", "UK", "Emirates");
+        ClubTeam arsenal = new ClubTeam(UUID.randomUUID().toString(), "Arsenal FC", "London", "England", "Emirates");
 
         Calendar sakaDOB = Calendar.getInstance();
         sakaDOB.set(2001,9,5);
