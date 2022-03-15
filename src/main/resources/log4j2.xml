@@ -2,7 +2,7 @@
 <Configuration>
 
     <Properties>
-        <Property name="logdir">dev-logs/abhilekh-ers-app</Property>
+        <Property name="logdir">/dev-logs/abhilekh-ers-app</Property>
         <Property name="layout">%d [%t] %-5level %logger{36} - %msg%n%throwable</Property>
     </Properties>
 
